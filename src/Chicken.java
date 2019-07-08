@@ -45,5 +45,8 @@ public class Chicken {
         throw new IllegalArgumentException("Name cannot be empty.");
     }
 
-
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

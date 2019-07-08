@@ -14,12 +14,15 @@ public class Chicken {
         this.name = name;
     }
 
-    private void validateNameLength(String message) {
-       throw  new IllegalArgumentException(message);
+    private void setAge(int age) {
+        if (age < 0 || age > 15) {
+            validateAge("Age should be between 0 and 15.");
+        }
+        this.age = age;
     }
 
-    private void setAge(int age) {
-        this.age = age;
+    private void validateAge(String message) {
+        throw new IllegalArgumentException(message);
     }
 
     public double productPerDay() {
@@ -28,6 +31,10 @@ public class Chicken {
 
     private double calculateProductPerDay() {
 
+    }
+
+    private void validateNameLength(String message) {
+        throw  new IllegalArgumentException(message);
     }
 
 

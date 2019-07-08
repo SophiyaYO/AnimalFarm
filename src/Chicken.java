@@ -14,6 +14,10 @@ public class Chicken {
         this.name = name;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     private void setAge(int age) {
         if (age < 0 || age > 15) {
             validateAge();
